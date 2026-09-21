@@ -53,9 +53,12 @@ h1{
     /* resize the icon to be smaller than the default size */
     font-size: 3.5rem;
 }
-
+/* gave each child element an order value 
+to control the order of the elements in the flexbox layout */
 .emoji > h2{
     order: 2;
+    /* set the width to 100% to make the h2 element 
+    take up the full width of the emoji element */
     width: 100%;
 }
 .emoji > span{
@@ -63,16 +66,21 @@ h1{
 }
 .emoji > p{
     order: 3;
+    /* gave the paragraph element a margin of 10px on the top and bottom 
+    to create some space between the elements */
+    margin: 10px 0;
 }
 .emoji > a{
     order: 4;
+    /* set the width to 100% to make the bottom link 
+    take up the full width of the emoji element */
     width: 100%;
 }
-
+/* set the 1st and 2nd emoji elements 80px height to match the examle image space,
+and the 3rd and 4th emoji elements 110px height to match the example image space */
 .emoji:nth-child(1) > p, .emoji:nth-child(2) > p{
-    height: 70px;
-    margin:0;
+    height: 80px;
 }
 .emoji:nth-child(3) > p, .emoji:nth-child(4) > p{
-    height: 100px;
+    height: 110px;
 }
