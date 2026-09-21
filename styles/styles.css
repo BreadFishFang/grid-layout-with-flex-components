@@ -29,10 +29,15 @@ body {
 /************************************************************************
                                 Main Styles
  ************************************************************************/  
+body{
+    /* set the maximum width of the body to 850px and center it horizontally */ 
+    max-width: 860px;
+    margin: 0 auto;
+}
 h1{
     /* to match the same space as the emojis element, 
     add 8px for the left margin */
-    margin:10px 8px;
+    margin:12px 8px;
 }
 .emojis{
     /* use grid to display the emojis in a 2x2 layout */
